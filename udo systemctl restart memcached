@@ -1,0 +1,11 @@
+[0;1;32m●[0m memcached.service - memcached daemon
+     Loaded: loaded (/lib/systemd/system/memcached.service; enabled; vendor preset: enabled)
+     Active: [0;1;32mactive (running)[0m since Tue 2023-11-14 02:37:22 CET; 20s ago
+       Docs: man:memcached(1)
+   Main PID: 73798 (memcached)
+      Tasks: 10 (limit: 6861)
+     Memory: 1.9M
+     CGroup: /system.slice/memcached.service
+             └─73798 /usr/bin/memcached -m 64 -p 11211 -u memcache -l 127.0.0.1 -P /var/run/memcached/memcached.pid
+
+Nov 14 02:37:22 144.217.144.159 systemd[1]: Started memcached daemon.
